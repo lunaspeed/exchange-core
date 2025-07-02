@@ -21,7 +21,7 @@ import exchange.core2.core.utils.HashingUtils;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 
@@ -33,7 +33,7 @@ import java.util.stream.Stream;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-@Slf4j
+@Log4j2
 public final class StateHashReportQuery implements ReportQuery<StateHashReportResult> {
 
     public StateHashReportQuery(BytesIn bytesIn) {

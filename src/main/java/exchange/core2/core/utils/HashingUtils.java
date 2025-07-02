@@ -16,7 +16,7 @@
 package exchange.core2.core.utils;
 
 import exchange.core2.core.common.StateHash;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.agrona.collections.MutableLong;
 import org.eclipse.collections.impl.map.mutable.primitive.IntObjectHashMap;
 import org.eclipse.collections.impl.map.mutable.primitive.LongObjectHashMap;
@@ -27,7 +27,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-@Slf4j
+@Log4j2
 public final class HashingUtils {
 
     public static int stateHash(final BitSet bitSet) {

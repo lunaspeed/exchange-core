@@ -20,10 +20,10 @@ import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.PersistenceTestsModule;
 import exchange.core2.tests.util.TestDataParameters;
 import exchange.core2.tests.util.TestOrdersGeneratorConfig;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 
-@Slf4j
+@Log4j2
 public final class PerfPersistence {
 
 

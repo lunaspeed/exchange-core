@@ -18,11 +18,11 @@ package exchange.core2.core.utils;
 import exchange.core2.core.common.MatcherTradeEvent;
 import exchange.core2.core.common.cmd.CommandResultCode;
 import exchange.core2.core.common.cmd.OrderCommand;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import static net.openhft.chronicle.core.UnsafeMemory.UNSAFE;
 
-@Slf4j
+@Log4j2
 public final class UnsafeUtils {
 
     private static final long OFFSET_RESULT_CODE;

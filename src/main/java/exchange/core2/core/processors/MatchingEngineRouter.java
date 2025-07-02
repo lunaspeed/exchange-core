@@ -35,7 +35,7 @@ import exchange.core2.core.utils.UnsafeUtils;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesOut;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
 import org.eclipse.collections.impl.map.mutable.primitive.IntObjectHashMap;
@@ -45,7 +45,7 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Optional;
 
-@Slf4j
+@Log4j2
 @Getter
 public final class MatchingEngineRouter implements WriteBytesMarshallable {
 

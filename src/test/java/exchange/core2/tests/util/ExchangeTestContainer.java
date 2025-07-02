@@ -33,7 +33,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.eclipse.collections.impl.map.mutable.primitive.IntLongHashMap;
 import org.hamcrest.core.Is;
 
@@ -51,7 +51,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Slf4j
+@Log4j2
 public final class ExchangeTestContainer implements AutoCloseable {
 
     private final ExchangeCore exchangeCore;

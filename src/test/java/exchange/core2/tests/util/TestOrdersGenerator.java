@@ -26,7 +26,7 @@ import exchange.core2.core.orderbook.IOrderBook;
 import exchange.core2.core.orderbook.OrderBookNaiveImpl;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.apache.commons.math3.distribution.ParetoDistribution;
 import org.apache.commons.math3.distribution.RealDistribution;
 import org.apache.commons.math3.random.JDKRandomGenerator;
@@ -45,7 +45,7 @@ import java.util.stream.DoubleStream;
 
 import static exchange.core2.tests.util.TestConstants.SYMBOLSPEC_EUR_USD;
 
-@Slf4j
+@Log4j2
 public final class TestOrdersGenerator {
 
 

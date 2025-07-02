@@ -21,7 +21,7 @@ import exchange.core2.core.common.cmd.CommandResultCode;
 import exchange.core2.core.common.cmd.OrderCommand;
 import exchange.core2.core.common.config.LoggingConfiguration;
 import exchange.core2.core.utils.SerializationUtils;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import org.eclipse.collections.impl.map.mutable.primitive.LongObjectHashMap;
@@ -30,7 +30,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 
-@Slf4j
+@Log4j2
 public final class OrderBookNaiveImpl implements IOrderBook {
 
     private final NavigableMap<Long, OrdersBucketNaive> askBuckets;

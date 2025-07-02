@@ -18,14 +18,14 @@ package exchange.core2.core.common;
 
 import exchange.core2.core.processors.RiskEngine;
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
 
 import java.util.Objects;
 
-@Slf4j
+@Log4j2
 @NoArgsConstructor
 public final class SymbolPositionRecord implements WriteBytesMarshallable, StateHash {
 

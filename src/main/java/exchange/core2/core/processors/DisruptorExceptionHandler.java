@@ -17,11 +17,11 @@ package exchange.core2.core.processors;
 
 import com.lmax.disruptor.ExceptionHandler;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.function.BiConsumer;
 
-@Slf4j
+@Log4j2
 @RequiredArgsConstructor
 public final class DisruptorExceptionHandler<T> implements ExceptionHandler<T> {
 

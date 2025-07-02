@@ -33,7 +33,7 @@ import exchange.core2.core.orderbook.OrderBookEventsHelper;
 import exchange.core2.core.processors.BinaryCommandsProcessor;
 import exchange.core2.core.utils.SerializationUtils;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.jpountz.lz4.LZ4Compressor;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
 import net.openhft.chronicle.wire.Wire;
@@ -48,7 +48,7 @@ import java.util.function.Function;
 import java.util.function.LongConsumer;
 import java.util.stream.Stream;
 
-@Slf4j
+@Log4j2
 @RequiredArgsConstructor
 public final class ExchangeApi {
 

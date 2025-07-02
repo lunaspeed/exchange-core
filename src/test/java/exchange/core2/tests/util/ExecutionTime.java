@@ -2,12 +2,12 @@ package exchange.core2.tests.util;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-@Slf4j
+@Log4j2
 @RequiredArgsConstructor
 public class ExecutionTime implements AutoCloseable {
 

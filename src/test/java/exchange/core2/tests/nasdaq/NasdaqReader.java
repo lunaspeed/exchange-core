@@ -9,7 +9,7 @@ import exchange.core2.core.common.config.SerializationConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.ExecutionTime;
 import exchange.core2.tests.util.TestConstants;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.agrona.BitUtil;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +19,7 @@ import java.util.BitSet;
 import java.util.List;
 import java.util.stream.IntStream;
 
-@Slf4j
+@Log4j2
 public class NasdaqReader {
 
 

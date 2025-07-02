@@ -21,7 +21,7 @@ import exchange.core2.core.common.cmd.OrderCommand;
 import exchange.core2.core.orderbook.IOrderBook;
 import exchange.core2.tests.util.TestOrdersGenerator;
 //import jdk.nashorn.internal.ir.annotations.Ignore;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.affinity.AffinityLock;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -40,7 +40,7 @@ import static org.hamcrest.Matchers.is;
 /**
  * TODO add tests where orders for same UID ignored during matching
  */
-@Slf4j
+@Log4j2
 public abstract class ITOrderBookBase {
 
     private IOrderBook orderBook;

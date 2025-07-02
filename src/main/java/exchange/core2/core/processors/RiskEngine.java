@@ -37,7 +37,7 @@ import exchange.core2.core.utils.UnsafeUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesMarshallable;
 import net.openhft.chronicle.bytes.BytesOut;
@@ -54,7 +54,7 @@ import java.util.Optional;
 /**
  * Stateful risk engine
  */
-@Slf4j
+@Log4j2
 @Getter
 public final class RiskEngine implements WriteBytesMarshallable {
 

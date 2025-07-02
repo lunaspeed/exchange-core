@@ -2,7 +2,7 @@ package exchange.core2.core.utils;
 
 import exchange.core2.core.processors.TwoStepSlaveProcessor;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.affinity.AffinityLock;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-@Slf4j
+@Log4j2
 @RequiredArgsConstructor
 public final class AffinityThreadFactory implements ThreadFactory {
 

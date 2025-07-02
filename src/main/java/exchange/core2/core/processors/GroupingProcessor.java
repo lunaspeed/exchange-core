@@ -22,13 +22,13 @@ import exchange.core2.core.common.cmd.CommandResultCode;
 import exchange.core2.core.common.cmd.OrderCommand;
 import exchange.core2.core.common.cmd.OrderCommandType;
 import exchange.core2.core.common.config.PerformanceConfiguration;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static exchange.core2.core.ExchangeCore.EVENTS_POOLING;
 
-@Slf4j
+@Log4j2
 public final class GroupingProcessor implements EventProcessor {
     private static final int IDLE = 0;
     private static final int HALTED = IDLE + 1;

@@ -22,7 +22,7 @@ import exchange.core2.core.common.cmd.CommandResultCode;
 import exchange.core2.core.utils.HashingUtils;
 import exchange.core2.core.utils.SerializationUtils;
 import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
@@ -33,7 +33,7 @@ import org.eclipse.collections.impl.map.mutable.primitive.LongObjectHashMap;
  * <p>
  * TODO make multi instance
  */
-@Slf4j
+@Log4j2
 public final class UserProfileService implements WriteBytesMarshallable, StateHash {
 
     /*

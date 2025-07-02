@@ -19,10 +19,10 @@ import exchange.core2.core.common.config.InitialStateConfiguration;
 import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.core.common.config.SerializationConfiguration;
 import exchange.core2.tests.util.*;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 
-@Slf4j
+@Log4j2
 public final class PerfThroughput {
 
     // TODO shutdown disruptor if test fails

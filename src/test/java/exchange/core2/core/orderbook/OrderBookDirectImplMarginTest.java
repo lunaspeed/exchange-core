@@ -19,9 +19,9 @@ import exchange.core2.collections.objpool.ObjectsPool;
 import exchange.core2.core.common.CoreSymbolSpecification;
 import exchange.core2.core.common.config.LoggingConfiguration;
 import exchange.core2.tests.util.TestConstants;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
-@Slf4j
+@Log4j2
 public final class OrderBookDirectImplMarginTest extends OrderBookDirectImplTest {
 
     @Override

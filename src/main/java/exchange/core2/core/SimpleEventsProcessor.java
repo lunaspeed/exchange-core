@@ -8,7 +8,7 @@ import exchange.core2.core.common.cmd.CommandResultCode;
 import exchange.core2.core.common.cmd.OrderCommand;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.agrona.collections.MutableBoolean;
 import org.agrona.collections.MutableLong;
 import org.agrona.collections.MutableReference;
@@ -19,7 +19,7 @@ import java.util.function.ObjLongConsumer;
 
 @RequiredArgsConstructor
 @Getter
-@Slf4j
+@Log4j2
 public class SimpleEventsProcessor implements ObjLongConsumer<OrderCommand> {
 
     private final IEventsHandler eventsHandler;

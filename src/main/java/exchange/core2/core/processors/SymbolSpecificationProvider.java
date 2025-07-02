@@ -20,7 +20,7 @@ import exchange.core2.core.common.CoreSymbolSpecification;
 import exchange.core2.core.common.StateHash;
 import exchange.core2.core.utils.HashingUtils;
 import exchange.core2.core.utils.SerializationUtils;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
@@ -28,7 +28,7 @@ import org.eclipse.collections.impl.map.mutable.primitive.IntObjectHashMap;
 
 import java.util.Objects;
 
-@Slf4j
+@Log4j2
 public final class SymbolSpecificationProvider implements WriteBytesMarshallable, StateHash {
 
     // symbol->specs

@@ -21,7 +21,7 @@ import exchange.core2.core.processors.MatchingEngineRouter;
 import exchange.core2.core.processors.RiskEngine;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import org.eclipse.collections.impl.map.mutable.primitive.IntObjectHashMap;
@@ -32,7 +32,7 @@ import java.util.stream.Stream;
 
 @EqualsAndHashCode
 @ToString
-@Slf4j
+@Log4j2
 public final class SingleUserReportQuery implements ReportQuery<SingleUserReportResult> {
 
     private final long uid;

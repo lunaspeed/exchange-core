@@ -18,12 +18,12 @@ package exchange.core2.tests.perf;
 import exchange.core2.core.common.config.InitialStateConfiguration;
 import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.util.TestDataParameters;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 
 import static exchange.core2.tests.util.LatencyTestsModule.individualLatencyTest;
 
-@Slf4j
+@Log4j2
 public final class PerfLatencyCommandsAvalanche {
 
 

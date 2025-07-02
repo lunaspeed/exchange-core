@@ -23,7 +23,7 @@ import exchange.core2.core.utils.SerializationUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
@@ -32,7 +32,7 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-@Slf4j
+@Log4j2
 @ToString
 public final class OrdersBucketNaive implements Comparable<OrdersBucketNaive>, WriteBytesMarshallable {
 

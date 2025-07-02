@@ -28,7 +28,7 @@ import exchange.core2.core.common.config.InitialStateConfiguration;
 import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.core.common.config.SerializationConfiguration;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.HdrHistogram.Histogram;
 import org.HdrHistogram.SingleWriterRecorder;
 import org.agrona.collections.MutableInteger;
@@ -50,7 +50,7 @@ import java.util.function.IntFunction;
 import java.util.stream.IntStream;
 
 
-@Slf4j
+@Log4j2
 public class LatencyTestsModule {
 
     private static final boolean WRITE_HDR_HISTOGRAMS = false;

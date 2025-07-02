@@ -18,7 +18,7 @@ package exchange.core2.core.common.api.reports;
 
 import exchange.core2.core.utils.SerializationUtils;
 import lombok.*;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.BytesIn;
 import net.openhft.chronicle.bytes.BytesOut;
 import net.openhft.chronicle.bytes.WriteBytesMarshallable;
@@ -28,7 +28,7 @@ import java.util.*;
 import java.util.stream.Stream;
 
 @Getter
-@Slf4j
+@Log4j2
 @EqualsAndHashCode
 @RequiredArgsConstructor
 @ToString

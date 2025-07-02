@@ -24,7 +24,7 @@ import exchange.core2.core.common.cmd.OrderCommandType;
 import exchange.core2.core.common.config.ExchangeConfiguration;
 import exchange.core2.core.common.config.InitialStateConfiguration;
 import exchange.core2.core.common.config.PerformanceConfiguration;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.jpountz.lz4.*;
 import net.jpountz.xxhash.XXHashFactory;
 import net.openhft.chronicle.bytes.Bytes;
@@ -49,7 +49,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.Function;
 
 
-@Slf4j
+@Log4j2
 public final class DiskSerializationProcessor implements ISerializationProcessor {
 
     private final int journalBufferFlushTrigger;

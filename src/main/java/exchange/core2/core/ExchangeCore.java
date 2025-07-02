@@ -33,7 +33,7 @@ import exchange.core2.core.orderbook.IOrderBook;
 import exchange.core2.core.processors.*;
 import exchange.core2.core.processors.journaling.ISerializationProcessor;
 import lombok.Builder;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -48,7 +48,7 @@ import java.util.stream.IntStream;
  * Main exchange core class.
  * Builds configuration and starts disruptor.
  */
-@Slf4j
+@Log4j2
 public final class ExchangeCore {
 
     private final Disruptor<OrderCommand> disruptor;

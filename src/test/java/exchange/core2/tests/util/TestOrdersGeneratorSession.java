@@ -16,13 +16,13 @@
 package exchange.core2.tests.util;
 
 import exchange.core2.core.orderbook.IOrderBook;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.eclipse.collections.impl.map.mutable.primitive.IntIntHashMap;
 
 import java.util.*;
 import java.util.function.UnaryOperator;
 
-@Slf4j
+@Log4j2
 public final class TestOrdersGeneratorSession {
 
     public final IOrderBook orderBook;

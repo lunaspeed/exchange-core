@@ -18,13 +18,13 @@ package exchange.core2.core.processors;
 import com.lmax.disruptor.*;
 import exchange.core2.core.common.CoreWaitStrategy;
 import exchange.core2.core.utils.ReflectionUtils;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.lang.reflect.Field;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
-@Slf4j
+@Log4j2
 public final class WaitSpinningHelper {
 
     private final SequenceBarrier sequenceBarrier;

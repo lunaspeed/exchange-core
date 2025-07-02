@@ -22,7 +22,7 @@ import exchange.core2.core.common.api.ApiCommand;
 import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.TestOrdersGenerator;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.eclipse.collections.impl.map.mutable.primitive.IntLongHashMap;
 import org.junit.jupiter.api.Test;
 
@@ -41,7 +41,7 @@ import static org.hamcrest.core.Is.is;
 import static org.hamcrest.number.OrderingComparison.greaterThan;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Slf4j
+@Log4j2
 public abstract class ITExchangeCoreIntegrationStress {
 
     // configuration provided by child class

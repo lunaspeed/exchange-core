@@ -17,11 +17,11 @@ package exchange.core2.core.processors;
 
 import exchange.core2.core.common.MatcherTradeEvent;
 import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
-@Slf4j
+@Log4j2
 public final class SharedPool {
 
     private final LinkedBlockingQueue<MatcherTradeEvent> eventChainsBuffer;

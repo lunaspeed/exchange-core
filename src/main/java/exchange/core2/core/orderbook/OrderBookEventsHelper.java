@@ -21,7 +21,7 @@ import exchange.core2.core.common.MatcherTradeEvent;
 import exchange.core2.core.common.cmd.OrderCommand;
 import exchange.core2.core.utils.SerializationUtils;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import net.openhft.chronicle.bytes.NativeBytes;
 import net.openhft.chronicle.wire.Wire;
 
@@ -31,7 +31,7 @@ import java.util.stream.Stream;
 
 import static exchange.core2.core.ExchangeCore.EVENTS_POOLING;
 
-@Slf4j
+@Log4j2
 @RequiredArgsConstructor
 public final class OrderBookEventsHelper {
 

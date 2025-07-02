@@ -18,11 +18,11 @@ package exchange.core2.core.processors;
 import com.lmax.disruptor.*;
 import exchange.core2.core.common.CoreWaitStrategy;
 import exchange.core2.core.common.cmd.OrderCommand;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-@Slf4j
+@Log4j2
 public final class TwoStepSlaveProcessor implements EventProcessor {
     private static final int IDLE = 0;
     private static final int HALTED = IDLE + 1;

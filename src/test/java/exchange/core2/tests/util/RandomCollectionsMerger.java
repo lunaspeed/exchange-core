@@ -15,7 +15,7 @@
  */
 package exchange.core2.tests.util;
 
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.apache.commons.math3.distribution.EnumeratedDistribution;
 import org.apache.commons.math3.random.JDKRandomGenerator;
 import org.apache.commons.math3.util.Pair;
@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Spliterator;
 import java.util.stream.Collectors;
 
-@Slf4j
+@Log4j2
 public class RandomCollectionsMerger {
 
     public static <T> ArrayList<T> mergeCollections(final Collection<? extends Collection<T>> chunks, final long seed) {

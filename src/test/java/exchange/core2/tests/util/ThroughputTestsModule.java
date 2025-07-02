@@ -21,12 +21,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import exchange.core2.core.common.config.InitialStateConfiguration;
 import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.core.common.config.SerializationConfiguration;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
 import java.util.stream.IntStream;
 
 
-@Slf4j
+@Log4j2
 public class ThroughputTestsModule {
 
     public static void throughputTestImpl(final PerformanceConfiguration performanceCfg,

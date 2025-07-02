@@ -6,7 +6,7 @@ import com.paritytrading.juncture.nasdaq.itch50.ITCH50Listener;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 import org.eclipse.collections.impl.map.mutable.primitive.ByteIntHashMap;
 import org.eclipse.collections.impl.map.mutable.primitive.IntObjectHashMap;
 
@@ -44,7 +44,7 @@ WFC     :
  OrderReplace = 46049
  */
 
-@Slf4j
+@Log4j2
 @Getter
 public class ITCH50StatListener implements ITCH50Listener {
 

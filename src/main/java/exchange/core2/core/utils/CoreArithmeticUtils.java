@@ -16,9 +16,9 @@
 package exchange.core2.core.utils;
 
 import exchange.core2.core.common.CoreSymbolSpecification;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
-@Slf4j
+@Log4j2
 public final class CoreArithmeticUtils {
 
     public static long calculateAmountAsk(long size, CoreSymbolSpecification spec) {
