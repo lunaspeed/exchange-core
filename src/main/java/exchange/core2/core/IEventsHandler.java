@@ -2,6 +2,7 @@ package exchange.core2.core;
 
 import exchange.core2.core.common.OrderAction;
 import exchange.core2.core.common.api.ApiCommand;
+import exchange.core2.core.common.api.ApiPlaceOrder;
 import exchange.core2.core.common.cmd.CommandResultCode;
 import lombok.Data;
 
@@ -60,6 +61,13 @@ public interface IEventsHandler {
     @Data
     class ApiCommandResult {
         public final ApiCommand command;
+        public final CommandResultCode resultCode;
+        public final long seq;
+    }
+
+    @Data
+    class PlaceOrderCommandResult {
+        public final ApiPlaceOrder placeOrder;
         public final CommandResultCode resultCode;
         public final long seq;
     }
